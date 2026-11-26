@@ -146,7 +146,7 @@
     <div>
       <span class="chip">Python · YouTube · Claude Code</span>
       <h1>Descubra o que já <span class="amb">funciona</span> nos seus canais</h1>
-      <p class="lead">Ele compara cada vídeo recente com o normal do próprio canal, aponta os que estão indo bem acima disso e transforma esses vencedores em ideias de vídeo novas.</p>
+      <p class="lead">Ele compara cada vídeo recente com o normal do próprio canal, aponta os que estêo indo bem acima disso e transforma esses vencedores em ideias de vídeo novas.</p>
       <div class="cta">
         <a class="btn" href="#guia">Começar o guia</a>
         <a class="btn ghost" href="https://github.com/inematds/muse-canais" target="_blank" rel="noopener">Ver no GitHub</a>
@@ -158,18 +158,18 @@
 
 <section id="resumo" class="resumo"><div class="wrap">
   <span class="chip">Em resumo</span>
-  <p>O muse-canais é um script em Python que olha os seus canais do YouTube e mostra quais vídeos recentes estão indo bem acima do normal de cada canal. Serve para quem publica muito e quer repetir o que funciona em vez de adivinhar. Ele lê o feed público de cada canal (os 15 vídeos mais recentes, com as visualizações), sem login e sem chave, e compara a velocidade de cada vídeo com a do vídeo típico do mesmo canal. Os que passam de 2 vezes viram "vencedores" e, se você pedir, viram 8 ideias novas de vídeo. Precisa só de Python 3; as ideias usam o Claude Code pela sua assinatura.</p>
+  <p>O muse-canais é um script em Python que olha os seus canais do YouTube e mostra quais vídeos recentes estêo indo bem acima do normal de cada canal. Serve para quem publica muito e quer repetir o que funciona em vez de adivinhar. Ele lê o feed público de cada canal (os 15 vídeos mais recentes, com as visualizações), sem login e sem chave, e compara a velocidade de cada vídeo com a do vídeo típico do mesmo canal. Os que passam de 2 vezes viram "vencedores" e, se você pedir, viram 8 ideias novas de vídeo. Precisa só de Python 3; as ideias usam o Claude Code pela sua assinatura.</p>
 </div></section>
 
 <section id="oque"><div class="wrap">
   <span class="chip">O que é</span>
   <h2>Um relatório do que repetir, canal por canal</h2>
-  <p class="sub">Cada canal é comparado com ele mesmo. Um canal pequeno não some ao lado de um grande.</p>
+  <p class="sub">Cada canal é comparado com ele mesmo. Um canal pequeno nêo some ao lado de um grande.</p>
   <figure style="margin:0 0 26px;border-radius:16px;overflow:hidden;border:1px solid var(--line);box-shadow:0 30px 80px -30px #000"><img src="assets/banner-grade.jpg" alt="As seis partes: feed público, velocidade, normal do canal, vencedores, 8 ideias e você escolhe" loading="lazy" style="width:100%;display:block"></figure>
   <div class="grid g3">
-    <div class="card"><h3>🔓 Só dados públicos</h3><p>Lê o feed RSS que o próprio YouTube oferece para cada canal (um arquivo com os vídeos mais recentes). Não pede senha, não usa a API do YouTube e não precisa de chave de nada.</p></div>
-    <div class="card"><h3>📊 Comparação justa</h3><p>Mede as visualizações por hora de cada vídeo e divide pela mediana do canal (o valor do meio, que não se deixa puxar por um vídeo fora da curva). Quem passa de 2× é vencedor.</p></div>
-    <div class="card"><h3>💡 Ideias que você escolhe</h3><p>Com <code>--ideias</code>, o Claude Code lê os títulos e os números dos vencedores e propõe 8 vídeos novos no mesmo padrão, com título, gancho e formato. Nada é produzido sozinho: você escolhe.</p></div>
+    <div class="card"><h3>🔓 Só dados públicos</h3><p>Lê o feed RSS que o próprio YouTube oferece para cada canal (um arquivo com os vídeos mais recentes). Nêo pede senha, nêo usa a API do YouTube e nêo precisa de chave de nada.</p></div>
+    <div class="card"><h3>📊 Comparaçêo justa</h3><p>Mede as visualizações por hora de cada vídeo e divide pela mediana do canal (o valor do meio, que nêo se deixa puxar por um vídeo fora da curva). Quem passa de 2× é vencedor.</p></div>
+    <div class="card"><h3>💡 Ideias que você escolhe</h3><p>Com <code>--ideias</code>, o Claude Code lê os títulos e os números dos vencedores e propõe 8 vídeos novos no mesmo padrêo, com título, gancho e formato. Nada é produzido sozinho: você escolhe.</p></div>
   </div>
 </div></section>
 
@@ -187,8 +187,8 @@
     <span>Sua escolha</span>
   </div>
   <div class="grid g3" style="margin-top:26px">
-    <div class="card"><h3>Velocidade</h3><p>Visualizações ÷ horas desde a publicação. Um vídeo com 900 visualizações em 100 horas anda a 9 por hora.</p></div>
-    <div class="card"><h3>Normal do canal</h3><p>A mediana da velocidade dos vídeos do canal com mais de 6 horas, com piso de 0,5 por hora: assim um canal quase parado não faz qualquer vídeo parecer um sucesso.</p></div>
+    <div class="card"><h3>Velocidade</h3><p>Visualizações ÷ horas desde a publicaçêo. Um vídeo com 900 visualizações em 100 horas anda a 9 por hora.</p></div>
+    <div class="card"><h3>Normal do canal</h3><p>A mediana da velocidade dos vídeos do canal com mais de 6 horas, com piso de 0,5 por hora: assim um canal quase parado nêo faz qualquer vídeo parecer um sucesso.</p></div>
     <div class="card"><h3>Vencedor</h3><p>2× o normal ou mais (ajustável com <code>--limiar</code>), entre 6 horas e 30 dias de idade e com pelo menos 50 visualizações. O relatório mostra até 15.</p></div>
   </div>
 </div></section>
@@ -198,8 +198,8 @@
   <h2>O que precisa ter</h2>
   <p class="sub">Nada de chave paga. Roda no Linux, no Mac ou no Windows pelo WSL (o Linux que roda dentro do Windows).</p>
   <div class="grid g3">
-    <div class="card"><h3>Python 3 e git</h3><p>O script usa só o que já vem com o Python; não há nada para instalar com pip. O git baixa o projeto. Confira se os dois estão na máquina:</p><pre><span class="k">python3</span> --version && <span class="k">git</span> --version</pre></div>
-    <div class="card"><h3>Claude Code (só para as ideias)</h3><p>A opção <code>--ideias</code> chama o Claude Code pela sua assinatura (instalação em <a href="https://claude.com/claude-code" target="_blank" rel="noopener">claude.com/claude-code</a>). Ele precisa estar logado: rode <code>claude</code> uma vez e entre na sua conta antes de usar <code>--ideias</code>. Sem ele, o relatório de vencedores funciona igual; só não saem as ideias.</p><pre><span class="k">claude</span> --version</pre></div>
+    <div class="card"><h3>Python 3 e git</h3><p>O script usa só o que já vem com o Python; nêo há nada para instalar com pip. O git baixa o projeto. Confira se os dois estêo na máquina:</p><pre><span class="k">python3</span> --version && <span class="k">git</span> --version</pre></div>
+    <div class="card"><h3>Claude Code (só para as ideias)</h3><p>A opçêo <code>--ideias</code> chama o Claude Code pela sua assinatura (instalaçêo em <a href="https://claude.com/claude-code" target="_blank" rel="noopener">claude.com/claude-code</a>). Ele precisa estar logado: rode <code>claude</code> uma vez e entre na sua conta antes de usar <code>--ideias</code>. Sem ele, o relatório de vencedores funciona igual; só nêo saem as ideias.</p><pre><span class="k">claude</span> --version</pre></div>
     <div class="card"><h3>O endereço dos seus canais</h3><p>O link de cada canal, como <code>https://www.youtube.com/@seucanal</code>. Pode ser o seu e também canais de outras pessoas que você acompanha: o feed é público.</p></div>
   </div>
 </div></section>
@@ -218,19 +218,19 @@
 
   <div class="step"><div class="b">2</div><div>
     <h3>Descubra o ID de cada canal</h3>
-    <p>O feed do YouTube pede o ID do canal (um código que começa com <code>UC</code>), não o @. O próprio script tem uma função que acha esse código a partir do endereço. Rode dentro da pasta do projeto (depois do <code>cd</code> do passo 1). Troque <code>@seucanal</code> pelo seu e repita para cada canal.</p>
+    <p>O feed do YouTube pede o ID do canal (um código que começa com <code>UC</code>), nêo o @. O próprio script tem uma funçêo que acha esse código a partir do endereço. Rode dentro da pasta do projeto (depois do <code>cd</code> do passo 1). Troque <code>@seucanal</code> pelo seu e repita para cada canal.</p>
 <pre><span class="k">python3</span> -c <span class="s">"import muse; print(muse.resolver_id('https://www.youtube.com/@seucanal'))"</span></pre>
     <p>Sai algo como <code>UC2QbQDyPKuHk93dwo5iq3Sw</code>. Se sair <code>None</code>, confira o endereço.</p>
   </div></div>
 
   <div class="step"><div class="b">3</div><div>
     <h3>Escreva a sua lista de canais</h3>
-    <p>O <code>canais.json</code> que vem no projeto tem os canais do INEMA. Abra o arquivo no editor do terminal com <code>nano canais.json</code> (ou no VS Code) e troque todo o conteúdo pelos seus canais, um bloco por canal, separados por vírgula. Não apague o arquivo: escreva por cima dele. A primeira palavra de cada bloco (<code>meucanal</code>, <code>segundo</code>) é um apelido curto que você escolhe; ele serve para a opção <code>--canais</code>.</p>
+    <p>O <code>canais.json</code> que vem no projeto tem os canais do INEMA. Abra o arquivo no editor do terminal com <code>nano canais.json</code> (ou no VS Code) e troque todo o conteúdo pelos seus canais, um bloco por canal, separados por vírgula. Nêo apague o arquivo: escreva por cima dele. A primeira palavra de cada bloco (<code>meucanal</code>, <code>segundo</code>) é um apelido curto que você escolhe; ele serve para a opçêo <code>--canais</code>.</p>
 <pre>{
   <span class="s">"meucanal"</span>: {<span class="s">"nome"</span>: <span class="s">"Meu canal"</span>, <span class="s">"url"</span>: <span class="s">"https://www.youtube.com/@meucanal"</span>, <span class="s">"id"</span>: <span class="s">"UC…"</span>},
   <span class="s">"segundo"</span>: {<span class="s">"nome"</span>: <span class="s">"Meu segundo canal"</span>, <span class="s">"url"</span>: <span class="s">"https://www.youtube.com/@segundo"</span>, <span class="s">"id"</span>: <span class="s">"UC…"</span>}
 }</pre>
-    <p>No lugar de <code>UC…</code>, cole o ID do passo 2. Canal sem ID é pulado. Cuidado com as aspas e as vírgulas: uma faltando, ou uma vírgula sobrando depois do último canal, e o script para com erro. No <code>nano</code>, salve com Ctrl+O e Enter e saia com Ctrl+X. A opção <code>--atualiza-canais</code> do README só serve para quem também usa o yt-pubx (a ferramenta de publicação do INEMA); com a lista escrita à mão, você não precisa dela.</p>
+    <p>No lugar de <code>UC…</code>, cole o ID do passo 2. Canal sem ID é pulado. Cuidado com as aspas e as vírgulas: uma faltando, ou uma vírgula sobrando depois do último canal, e o script para com erro. No <code>nano</code>, salve com Ctrl+O e Enter e saia com Ctrl+X. A opçêo <code>--atualiza-canais</code> do README só serve para quem também usa o yt-pubx (a ferramenta de publicaçêo do INEMA); com a lista escrita à mêo, você nêo precisa dela.</p>
   </div></div>
 
   <div class="step"><div class="b">4</div><div>
@@ -242,27 +242,27 @@
 
   <div class="step"><div class="b">5</div><div>
     <h3>Gere o relatório com as ideias</h3>
-    <p>Sem <code>--dry</code>, ele grava o relatório. Com <code>--ideias</code>, o Claude Code propõe 8 vídeos novos a partir dos vencedores (pode levar alguns minutos). Se nenhum vídeo passou de 2×, não há ideias nesse dia. Se a lista tem vencedores e mesmo assim não saíram ideias, o problema é o Claude Code (não instalado ou sem login): teste com <code>claude -p "oi"</code>.</p>
+    <p>Sem <code>--dry</code>, ele grava o relatório. Com <code>--ideias</code>, o Claude Code propõe 8 vídeos novos a partir dos vencedores (pode levar alguns minutos). Se nenhum vídeo passou de 2×, nêo há ideias nesse dia. Se a lista tem vencedores e mesmo assim nêo saíram ideias, o problema é o Claude Code (nêo instalado ou sem login): teste com <code>claude -p "oi"</code>.</p>
 <pre><span class="k">python3</span> muse.py --ideias</pre>
     <p>O relatório fica em <code>~/projetos/output/muse-canais/&lt;data&gt;/muse.md</code> (para ler) e <code>muse.json</code> (os mesmos dados em JSON, o formato de texto que outros programas leem). Para gravar em outra pasta, defina <code>MUSE_SAIDA</code> antes do comando, ex.: <code>MUSE_SAIDA=~/relatorios python3 muse.py --ideias</code>.</p>
-    <p><b>Atenção:</b> o pedido das ideias está escrito para o INEMA (canais que ensinam IA). Para outro assunto, abra o <code>muse.py</code>, procure a linha que começa com <code>Você é o pauteiro do INEMA</code> e troque pela descrição dos seus canais. Na linha logo abaixo, troque também <code>NOSSOS canais</code> se quiser, e, mais abaixo, o exemplo <code>ex.: lives11</code> por um apelido do seu <code>canais.json</code>. Cada ideia sai com um formato: <code>short 9:16</code> (vídeo curto em pé), <code>16:9</code> (vídeo deitado comum) ou <code>carrossel</code> (post de várias imagens).</p>
+    <p><b>Atençêo:</b> o pedido das ideias está escrito para o INEMA (canais que ensinam IA). Para outro assunto, abra o <code>muse.py</code>, procure a linha que começa com <code>Você é o pauteiro do INEMA</code> e troque pela descriçêo dos seus canais. Na linha logo abaixo, troque também <code>NOSSOS canais</code> se quiser, e, mais abaixo, o exemplo <code>ex.: lives11</code> por um apelido do seu <code>canais.json</code>. Cada ideia sai com um formato: <code>short 9:16</code> (vídeo curto em pé), <code>16:9</code> (vídeo deitado comum) ou <code>carrossel</code> (post de várias imagens).</p>
   </div></div>
 
   <div class="step"><div class="b">6</div><div>
     <h3>Ajuste quando quiser</h3>
-    <p>As opções se combinam. Os nomes depois de <code>--canais</code> são os apelidos do seu <code>canais.json</code>.</p>
+    <p>As opções se combinam. Os nomes depois de <code>--canais</code> sêo os apelidos do seu <code>canais.json</code>.</p>
 <p>12 ideias em vez de 8:</p>
 <pre><span class="k">python3</span> muse.py --ideias --n <span class="s">12</span></pre>
 <p>Só vídeos com 3× o normal ou mais:</p>
 <pre><span class="k">python3</span> muse.py --limiar <span class="s">3</span></pre>
 <p>Só esses canais:</p>
 <pre><span class="k">python3</span> muse.py --canais <span class="s">meucanal,segundo</span></pre>
-    <p>A partir da segunda rodada (sem <code>--dry</code>), o script também guarda as visualizações de cada vídeo em <code>estado/historico.jsonl</code> e anota, no <code>muse.json</code>, quanto cada vídeo ganhou entre uma rodada e outra. Quem é vencedor continua sendo decidido pela velocidade desde a publicação.</p>
+    <p>A partir da segunda rodada (sem <code>--dry</code>), o script também guarda as visualizações de cada vídeo em <code>estado/historico.jsonl</code> e anota, no <code>muse.json</code>, quanto cada vídeo ganhou entre uma rodada e outra. Quem é vencedor continua sendo decidido pela velocidade desde a publicaçêo.</p>
   </div></div>
 
   <div class="step"><div class="b">7</div><div>
     <h3>Todo dia sozinho (opcional)</h3>
-    <p>O projeto traz um agendamento do Linux (systemd) que roda <code>muse.py --ideias</code> todo dia às 08:00. Ele vem desligado. Funciona no Linux e no WSL com systemd ligado; no Mac não existe systemd, então rode o comando à mão. O serviço espera o projeto em <code>~/projetos/muse-canais</code>. Para ligar, de dentro da pasta do projeto:</p>
+    <p>O projeto traz um agendamento do Linux (systemd) que roda <code>muse.py --ideias</code> todo dia às 08:00. Ele vem desligado. Funciona no Linux e no WSL com systemd ligado; no Mac nêo existe systemd, entêo rode o comando à mêo. O serviço espera o projeto em <code>~/projetos/muse-canais</code>. Para ligar, de dentro da pasta do projeto:</p>
 <pre><span class="k">mkdir -p</span> ~/.config/systemd/user
 <span class="k">cp</span> systemd/muse-canais.* ~/.config/systemd/user/
 <span class="k">systemctl</span> --user daemon-reload
@@ -279,27 +279,27 @@
   <div class="tbl"><table>
     <thead><tr><th>Canal</th><th>Vídeo</th><th>Visualizações</th><th>Idade</th><th>× normal</th></tr></thead>
     <tbody>
-      <tr><td data-label="Canal">INEMA Tec</td><td data-label="Vídeo">Você não precisa de mais tempo — precisa parar de fazer tudo à mão</td><td class="n" data-label="Visualizações">532</td><td class="n" data-label="Idade">20 h</td><td class="n" data-label="× normal">54,31×</td></tr>
+      <tr><td data-label="Canal">INEMA Tec</td><td data-label="Vídeo">Você nêo precisa de mais tempo — precisa parar de fazer tudo à mêo</td><td class="n" data-label="Visualizações">532</td><td class="n" data-label="Idade">20 h</td><td class="n" data-label="× normal">54,31×</td></tr>
       <tr><td data-label="Canal">fin-adv</td><td data-label="Vídeo">Bolsa caiu 13,88% num dia: Copom, dólar e dívida na semana que vem</td><td class="n" data-label="Visualizações">1150</td><td class="n" data-label="Idade">11 h</td><td class="n" data-label="× normal">48,0×</td></tr>
       <tr><td data-label="Canal">INEMA FTD</td><td data-label="Vídeo">Renda Acabando e Nenhuma Resposta? O Erro Que Você Repete Todo Dia</td><td class="n" data-label="Visualizações">501</td><td class="n" data-label="Idade">21 h</td><td class="n" data-label="× normal">25,72×</td></tr>
-      <tr><td data-label="Canal">INEMA Tec</td><td data-label="Vídeo">A IA que não esquece mais nada: Claude Mem leva 1.723 estrelas e lider…</td><td class="n" data-label="Visualizações">196</td><td class="n" data-label="Idade">20 h</td><td class="n" data-label="× normal">19,23×</td></tr>
-      <tr><td data-label="Canal">eventosextremos-inema</td><td data-label="Vídeo">Previsão do Dia: calorão agora e tempestade severa com granizo no Sul</td><td class="n" data-label="Visualizações">6574</td><td class="n" data-label="Idade">20 h</td><td class="n" data-label="× normal">5,72×</td></tr>
+      <tr><td data-label="Canal">INEMA Tec</td><td data-label="Vídeo">A IA que nêo esquece mais nada: Claude Mem leva 1.723 estrelas e lider…</td><td class="n" data-label="Visualizações">196</td><td class="n" data-label="Idade">20 h</td><td class="n" data-label="× normal">19,23×</td></tr>
+      <tr><td data-label="Canal">eventosextremos-inema</td><td data-label="Vídeo">Previsêo do Dia: calorêo agora e tempestade severa com granizo no Sul</td><td class="n" data-label="Visualizações">6574</td><td class="n" data-label="Idade">20 h</td><td class="n" data-label="× normal">5,72×</td></tr>
     </tbody>
   </table></div>
   <p class="mut" style="font-size:.88rem;margin-top:10px">Repare no último vídeo: 6574 visualizações, mas só 5,72× porque aquele canal costuma ter muito mais visualizações. E 196 visualizações já deram 19×, num canal que costuma ter poucas.</p>
   <div class="grid g2">
-    <div class="card idea"><h3>Você não precisa programar: um agente da IA faz isso no seu celular</h3><p><b>Gancho:</b> Seu celular pode fazer sozinho aquilo que você repete todo dia na mão.</p><p><b>Por quê:</b> repete o "pare de fazer tudo à mão" (54×).</p><p><b>Formato:</b> short 9:16</p></div>
+    <div class="card idea"><h3>Você nêo precisa programar: um agente da IA faz isso no seu celular</h3><p><b>Gancho:</b> Seu celular pode fazer sozinho aquilo que você repete todo dia na mêo.</p><p><b>Por quê:</b> repete o "pare de fazer tudo à mêo" (54×).</p><p><b>Formato:</b> short 9:16</p></div>
     <div class="card idea"><h3>Cinco IAs pequenas juntas venceram uma gigante. O que isso muda pra você</h3><p><b>Gancho:</b> Uma IA sozinha erra. Cinco trabalhando em equipe acertaram mais.</p><p><b>Por quê:</b> segue o "Claude Mem lidera o GitHub" (19×): novidade técnica com placar concreto; o dado fica marcado "a confirmar".</p><p><b>Formato:</b> short 9:16</p></div>
   </div>
 </div></section>
 
 <section id="roadmap"><div class="wrap">
   <span class="chip">Limites e próximos passos</span>
-  <h2>O que ele não faz</h2>
+  <h2>O que ele nêo faz</h2>
   <p class="sub">Para você saber o que esperar do relatório.</p>
-  <div class="phase"><div class="tag">Limite</div><div class="d"><strong>Só os 15 vídeos mais recentes</strong><span>O feed público não traz vídeos mais antigos, tempo assistido nem retenção.</span></div></div>
-  <div class="phase"><div class="tag">Limite</div><div class="d"><strong>Números com algumas horas de atraso</strong><span>As visualizações do feed chegam atrasadas em relação ao YouTube Studio, e às vezes o YouTube recusa o feed de um canal: ele aparece em "sem resposta".</span></div></div>
-  <div class="phase"><div class="tag">Limite</div><div class="d"><strong>As ideias veem só título e números</strong><span>Elas não assistem aos vídeos. Todo fato ou número de um vídeo novo precisa de fonte própria; o pedido manda marcar "dado a confirmar".</span></div></div>
+  <div class="phase"><div class="tag">Limite</div><div class="d"><strong>Só os 15 vídeos mais recentes</strong><span>O feed público nêo traz vídeos mais antigos, tempo assistido nem retençêo.</span></div></div>
+  <div class="phase"><div class="tag">Limite</div><div class="d"><strong>Números com algumas horas de atraso</strong><span>As visualizações do feed chegam atrasadas em relaçêo ao YouTube Studio, e às vezes o YouTube recusa o feed de um canal: ele aparece em "sem resposta".</span></div></div>
+  <div class="phase"><div class="tag">Limite</div><div class="d"><strong>As ideias veem só título e números</strong><span>Elas nêo assistem aos vídeos. Todo fato ou número de um vídeo novo precisa de fonte própria; o pedido manda marcar "dado a confirmar".</span></div></div>
   <div class="phase"><div class="tag">1.0 ✔</div><div class="d"><strong>Feed, conta, vencedores e ideias</strong><span>Normal do canal com piso, janela de 6 h a 30 dias, histórico entre rodadas, 8 ideias e agendamento diário pronto (desligado).</span></div></div>
 </div></section>
 

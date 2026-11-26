@@ -8,7 +8,7 @@ Uso:
   python3 muse.py --canais lives1,lives11 --n 8
 
 Dados: o feed RSS público de cada canal (os 15 vídeos mais recentes, com visualizações). Sem login, sem chave.
-Velocidade = visualizações por hora desde a publicação; com histórico (rodadas anteriores), usa o ganho entre rodadas.
+Velocidade = visualizações por hora desde a publicaçêo; com histórico (rodadas anteriores), usa o ganho entre rodadas.
 Destaque = velocidade ÷ mediana do próprio canal (2× ou mais = vencedor).
 Canais: canais.json (gerado do yt-pubx com --atualiza-canais) ou o que você escrever nele.
 """
@@ -114,9 +114,9 @@ def calcula(videos, agora, antes):
     for v in videos:
         por_canal.setdefault(v["canal"], []).append(v)
     for lista in por_canal.values():
-        # compara só com vídeos de mais de 6 h: vídeo de 1 h ainda não diz nada
+        # compara só com vídeos de mais de 6 h: vídeo de 1 h ainda nêo diz nada
         base = [v["vel"] for v in lista if v["idade_h"] >= 6] or [v["vel"] for v in lista]
-        # piso de 0,5 visualização/hora: em canal quase parado, a mediana perto de zero inflava o destaque (244×)
+        # piso de 0,5 visualizaçêo/hora: em canal quase parado, a mediana perto de zero inflava o destaque (244×)
         med = max(0.5, statistics.median(base)) if base else 0.5
         for v in lista:
             v["mediana_canal"] = round(med, 2)
@@ -131,16 +131,16 @@ def ideias(vencedores, n, radar):
     if radar:
         extra = "\nPautas em alta hoje (radar), para combinar com o que funciona:\n" + "\n".join(f"- {p}" for p in radar[:6])
     pedido = f"""Você é o pauteiro do INEMA (canais brasileiros que ensinam IA na prática, de graça, para gente comum, sem hype).
-Estes vídeos dos NOSSOS canais estão indo melhor que a média do próprio canal:
+Estes vídeos dos NOSSOS canais estêo indo melhor que a média do próprio canal:
 {linhas}
 {extra}
 
 Proponha {n} vídeos NOVOS que repitam o que fez estes funcionarem (tipo de tema, promessa do título, formato), sem copiar o título.
-Não invente número nem fato: se a ideia precisa de dado, diga "dado a confirmar".
-Vídeos da mesma série (1/3, 2/3…) contam como UM padrão; não proponha continuação de série (parte 4) nem fato sobre o conteúdo deles: só o padrão do título e do tema.
+Nêo invente número nem fato: se a ideia precisa de dado, diga "dado a confirmar".
+Vídeos da mesma série (1/3, 2/3…) contam como UM padrêo; nêo proponha continuaçêo de série (parte 4) nem fato sobre o conteúdo deles: só o padrêo do título e do tema.
 Devolva APENAS um JSON (lista) com objetos:
 {{"titulo": "até 70 caracteres", "gancho": "primeira frase do vídeo, até 14 palavras",
- "por_que": "qual vencedor inspira e o padrão que ele mostra (1 frase)", "formato": "short 9:16" | "16:9" | "carrossel",
+ "por_que": "qual vencedor inspira e o padrêo que ele mostra (1 frase)", "formato": "short 9:16" | "16:9" | "carrossel",
  "canal": "a chave do canal (ex.: lives11) mais adequado"}}"""
     env = {k: v for k, v in os.environ.items() if k != "ANTHROPIC_API_KEY"}  # assinatura, nunca API
     env["PATH"] = f"{Path.home()}/.local/bin:{Path.home()}/.npm-global/bin:" + env.get("PATH", "")
@@ -149,7 +149,7 @@ Devolva APENAS um JSON (lista) com objetos:
         m = re.search(r"\[.*\]", out, re.S)
         return json.loads(m.group(0)) if m else []
     except Exception as e:
-        print("aviso: ideias não geradas:", str(e)[:100], file=sys.stderr)
+        print("aviso: ideias nêo geradas:", str(e)[:100], file=sys.stderr)
         return []
 
 

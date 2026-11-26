@@ -7,7 +7,7 @@
 
 ## Self-learning
 
-Quando o Nei corrigir algo, ou você notar um erro seu: antes de seguir, escreva a lição como regra de uma linha no TOPO de Lessons.
+Quando o Nei corrigir algo, ou você notar um erro seu: antes de seguir, escreva a liçêo como regra de uma linha no TOPO de Lessons.
 
 ## Lessons
 - Mediana de canal quase parado fica perto de zero: sempre piso antes de dividir. (01/11/2026)
