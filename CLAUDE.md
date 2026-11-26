@@ -1,6 +1,6 @@
 # CLAUDE.md — muse-canais
 
-- Repo `inematds/muse-canais`; autor `inematds <inematds@gmail.com>`. Uso: `SKILL.md`. Processo: README.
+- Repo `linnoff88-dev/muse-canais`; autor `linnoff88-dev <linnoff88-dev@gmail.com>`. Uso: `SKILL.md`. Processo: README.
 - Só dados públicos (RSS do YouTube). Nunca ler credencial do yt-pubx: `--atualiza-canais` pega só nome e endereço.
 - Ideias pelo `claude -p` (assinatura, sem ANTHROPIC_API_KEY). Timer vem desligado.
 - Mudou o fluxo → atualizar a tabela "O processo, do início ao fim" do README no mesmo commit.

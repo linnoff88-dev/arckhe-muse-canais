@@ -5,9 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>muse-canais — qué está funcionando en tus canales de YouTube</title>
 <meta name="description" content="Script en Python que lee el feed público de tus canales de YouTube, encuentra los videos recientes que están 2× por encima de lo habitual en cada canal y transforma a los ganadores en nuevas ideas de video.">
-<link rel="alternate" hreflang="pt-BR" href="https://inematds.github.io/muse-canais/guia/">
-<link rel="alternate" hreflang="en" href="https://inematds.github.io/muse-canais/guia/en/">
-<link rel="alternate" hreflang="es" href="https://inematds.github.io/muse-canais/guia/es/">
+<link rel="alternate" hreflang="pt-BR" href="https://linnoff88-dev.github.io/arckhe-/guia/">
+<link rel="alternate" hreflang="en" href="https://linnoff88-dev.github.io/arckhe-/guia/en/">
+<link rel="alternate" hreflang="es" href="https://linnoff88-dev.github.io/arckhe-/guia/es/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
@@ -43,8 +43,8 @@
   nav .brand{display:flex;align-items:center;gap:8px;font-family:Sora;font-weight:800;letter-spacing:-.02em;color:var(--amb)}
   nav .brand .emoji{font-size:1.25rem}
   nav .sep{color:var(--mut);opacity:.45}
-  nav .inema{color:var(--sky);font-weight:600;font-size:.88rem;font-family:Sora}
-  nav .inema:hover{filter:brightness(1.15)}
+  nav .ARCKHÉ{color:var(--sky);font-weight:600;font-size:.88rem;font-family:Sora}
+  nav .ARCKHÉ:hover{filter:brightness(1.15)}
   nav .pro{color:var(--pro);font-weight:600;font-size:.88rem;font-family:Sora}
   nav .pro:hover{filter:brightness(1.15)}
   nav .clubpro{display:inline-flex;align-items:center;gap:6px}
@@ -124,9 +124,9 @@
   <a class="brand" href="#top"><span class="emoji">📈</span> muse-canais</a>
   <span class="sep">|</span>
   <span class="clubpro">
-    <a class="inema" href="https://inema.club" target="_blank" rel="noopener">INEMA.CLUB</a>
+    <a class="ARCKHÉ" href="https://ARCKHÉ AI" target="_blank" rel="noopener">ARCKHÉ AI</a>
     <span class="sep">-</span>
-    <a class="pro" href="https://inema.pro" target="_blank" rel="noopener">PRO</a>
+    <a class="pro" href="https://ARCKHÉ.pro" target="_blank" rel="noopener">PRO</a>
   </span>
   <div class="links">
     <a class="sec" href="#oque">Qué es</a>
@@ -136,7 +136,7 @@
     <a class="sec" href="#roadmap">Límites</a>
     <span class="lang"><a href="../">PT</a><a href="../en/">EN</a><a class="on" href="./">ES</a></span>
     <button class="tgl" id="themeToggle" aria-label="Cambiar tema" title="Cambiar tema">🌙</button>
-    <a class="btn" href="https://github.com/inematds/muse-canais" target="_blank" rel="noopener">GitHub</a>
+    <a class="btn" href="https://github.com/linnoff88-dev/muse-canais" target="_blank" rel="noopener">GitHub</a>
   </div>
 </div></nav>
 
@@ -149,7 +149,7 @@
       <p class="lead">Compara cada video reciente con lo habitual en el propio canal, señala los que están rindiendo muy por encima de eso y transforma a esos ganadores en nuevas ideas de video.</p>
       <div class="cta">
         <a class="btn" href="#guia">Empezar la guía</a>
-        <a class="btn ghost" href="https://github.com/inematds/muse-canais" target="_blank" rel="noopener">Ver en GitHub</a>
+        <a class="btn ghost" href="https://github.com/linnoff88-dev/muse-canais" target="_blank" rel="noopener">Ver en GitHub</a>
       </div>
     </div>
     <figure><img src="../assets/banner-es.jpg" alt="Banner de muse-canais: qué funciona en tus canales de YouTube"></figure>
@@ -212,7 +212,7 @@
   <div class="step"><div class="b">1</div><div>
     <h3>Descarga el proyecto</h3>
     <p>Copia el proyecto en la carpeta <code>~/projetos/muse-canais</code> y entra en ella.</p>
-<pre><span class="k">git clone</span> <span class="s">https://github.com/inematds/muse-canais</span> ~/projetos/muse-canais
+<pre><span class="k">git clone</span> <span class="s">https://github.com/linnoff88-dev/muse-canais</span> ~/projetos/muse-canais
 <span class="k">cd</span> ~/projetos/muse-canais</pre>
   </div></div>
 
@@ -225,12 +225,12 @@
 
   <div class="step"><div class="b">3</div><div>
     <h3>Escribe tu lista de canales</h3>
-    <p>El archivo <code>canais.json</code> que viene con el proyecto contiene los canales de INEMA. Abre el archivo en el editor de la terminal con <code>nano canais.json</code> (o en VS Code) y reemplaza todo el contenido por tus canales, un bloque por canal, separados por comas. No borres el archivo: escribe encima. La primera palabra de cada bloque (<code>meucanal</code>, <code>segundo</code>) es un apodo corto que tú eliges; sirve para la opción <code>--canais</code>.</p>
+    <p>El archivo <code>canais.json</code> que viene con el proyecto contiene los canales de ARCKHÉ. Abre el archivo en el editor de la terminal con <code>nano canais.json</code> (o en VS Code) y reemplaza todo el contenido por tus canales, un bloque por canal, separados por comas. No borres el archivo: escribe encima. La primera palabra de cada bloque (<code>meucanal</code>, <code>segundo</code>) es un apodo corto que tú eliges; sirve para la opción <code>--canais</code>.</p>
 <pre>{
   <span class="s">"meucanal"</span>: {<span class="s">"nome"</span>: <span class="s">"Mi canal"</span>, <span class="s">"url"</span>: <span class="s">"https://www.youtube.com/@meucanal"</span>, <span class="s">"id"</span>: <span class="s">"UC…"</span>},
   <span class="s">"segundo"</span>: {<span class="s">"nome"</span>: <span class="s">"Mi segundo canal"</span>, <span class="s">"url"</span>: <span class="s">"https://www.youtube.com/@segundo"</span>, <span class="s">"id"</span>: <span class="s">"UC…"</span>}
 }</pre>
-    <p>En lugar de <code>UC…</code>, pega el ID del paso 2. Los canales sin ID se omiten. Ten cuidado con las comillas y las comas: si falta una, o sobra una coma después del último canal, el script se detiene con un error. En <code>nano</code>, guarda con Ctrl+O y Enter y sal con Ctrl+X. La opción <code>--atualiza-canais</code> del README solo sirve si también usas yt-pubx (la herramienta de publicación de INEMA); si escribiste la lista a mano, no la necesitas.</p>
+    <p>En lugar de <code>UC…</code>, pega el ID del paso 2. Los canales sin ID se omiten. Ten cuidado con las comillas y las comas: si falta una, o sobra una coma después del último canal, el script se detiene con un error. En <code>nano</code>, guarda con Ctrl+O y Enter y sal con Ctrl+X. La opción <code>--atualiza-canais</code> del README solo sirve si también usas yt-pubx (la herramienta de publicación de ARCKHÉ); si escribiste la lista a mano, no la necesitas.</p>
   </div></div>
 
   <div class="step"><div class="b">4</div><div>
@@ -245,7 +245,7 @@
     <p>Sin <code>--dry</code>, guarda el informe. Con <code>--ideias</code>, Claude Code propone 8 nuevos videos a partir de los ganadores (puede tardar unos minutos). Si ningún video superó 2×, ese día no habrá ideas. Si la lista tiene ganadores y aun así no salieron ideas, el problema es Claude Code (no instalado o sin iniciar sesión): pruébalo con <code>claude -p "hola"</code>.</p>
 <pre><span class="k">python3</span> muse.py --ideias</pre>
     <p>El informe queda en <code>~/projetos/output/muse-canais/&lt;data&gt;/muse.md</code> (para leer) y <code>muse.json</code> (los mismos datos en JSON, un formato de texto que pueden leer otros programas). Para guardarlo en otra carpeta, define <code>MUSE_SAIDA</code> antes del comando, por ejemplo: <code>MUSE_SAIDA=~/relatorios python3 muse.py --ideias</code>.</p>
-    <p><b>Atención:</b> la instrucción para generar ideas está escrita para INEMA (canales que enseñan IA). Para otro tema, abre <code>muse.py</code>, busca la línea que empieza con <code>Você é o pauteiro do INEMA</code> —está en portugués porque es el texto literal del archivo— y reemplázala por una descripción de tus canales. En la línea siguiente, cambia también <code>NOSSOS canais</code> si quieres, y más adelante, el ejemplo <code>ex.: lives11</code> por un apodo de tu <code>canais.json</code>. Cada idea incluye un formato: <code>short 9:16</code> (video vertical corto), <code>16:9</code> (video horizontal común) o <code>carrossel</code> (publicación con varias imágenes).</p>
+    <p><b>Atención:</b> la instrucción para generar ideas está escrita para ARCKHÉ (canales que enseñan IA). Para otro tema, abre <code>muse.py</code>, busca la línea que empieza con <code>Você é o pauteiro do ARCKHÉ</code> —está en portugués porque es el texto literal del archivo— y reemplázala por una descripción de tus canales. En la línea siguiente, cambia también <code>NOSSOS canais</code> si quieres, y más adelante, el ejemplo <code>ex.: lives11</code> por un apodo de tu <code>canais.json</code>. Cada idea incluye un formato: <code>short 9:16</code> (video vertical corto), <code>16:9</code> (video horizontal común) o <code>carrossel</code> (publicación con varias imágenes).</p>
   </div></div>
 
   <div class="step"><div class="b">6</div><div>
@@ -269,21 +269,21 @@
 <span class="k">systemctl</span> --user enable --now muse-canais.timer</pre>
   </div></div>
 
-  <p class="mut" style="margin-top:6px">Si también usas <a href="https://github.com/inematds/radar-pautas" target="_blank" rel="noopener">radar-pautas</a> (otro proyecto de INEMA que reúne las noticias del día y sugiere temas), las tendencias del día se incluyen automáticamente en la solicitud de ideas.</p>
+  <p class="mut" style="margin-top:6px">Si también usas <a href="https://github.com/linnoff88-dev/radar-pautas" target="_blank" rel="noopener">radar-pautas</a> (otro proyecto de ARCKHÉ que reúne las noticias del día y sugiere temas), las tendencias del día se incluyen automáticamente en la solicitud de ideas.</p>
 </div></section>
 
 <section id="exemplos"><div class="wrap">
   <span class="chip">Ejemplo</span>
-  <h2>Una ejecución real en los canales de INEMA</h2>
+  <h2>Una ejecución real en los canales de ARCKHÉ</h2>
   <p class="sub">Ejecución del 01/11/2026: 270 videos de 18 canales. Aquí se muestran 5 de los 15 ganadores y 2 de las 8 ideas, tal como aparecieron en <code>muse.md</code> (en portugués, porque estos canales publican en portugués).</p>
   <div class="tbl"><table>
     <thead><tr><th>Canal</th><th>Video</th><th>Visualizaciones</th><th>Antigüedad</th><th>× habitual</th></tr></thead>
     <tbody>
-      <tr><td data-label="Canal">INEMA Tec</td><td data-label="Video">Você nêo precisa de mais tempo — precisa parar de fazer tudo à mêo</td><td class="n" data-label="Visualizaciones">532</td><td class="n" data-label="Antigüedad">20 h</td><td class="n" data-label="× habitual">54.31×</td></tr>
+      <tr><td data-label="Canal">ARCKHÉ Tec</td><td data-label="Video">Você nêo precisa de mais tempo — precisa parar de fazer tudo à mêo</td><td class="n" data-label="Visualizaciones">532</td><td class="n" data-label="Antigüedad">20 h</td><td class="n" data-label="× habitual">54.31×</td></tr>
       <tr><td data-label="Canal">fin-adv</td><td data-label="Video">Bolsa caiu 13,88% num dia: Copom, dólar e dívida na semana que vem</td><td class="n" data-label="Visualizaciones">1150</td><td class="n" data-label="Antigüedad">11 h</td><td class="n" data-label="× habitual">48.0×</td></tr>
-      <tr><td data-label="Canal">INEMA FTD</td><td data-label="Video">Renda Acabando e Nenhuma Resposta? O Erro Que Você Repete Todo Dia</td><td class="n" data-label="Visualizaciones">501</td><td class="n" data-label="Antigüedad">21 h</td><td class="n" data-label="× habitual">25.72×</td></tr>
-      <tr><td data-label="Canal">INEMA Tec</td><td data-label="Video">A IA que nêo esquece mais nada: Claude Mem leva 1.723 estrelas e lider…</td><td class="n" data-label="Visualizaciones">196</td><td class="n" data-label="Antigüedad">20 h</td><td class="n" data-label="× habitual">19.23×</td></tr>
-      <tr><td data-label="Canal">eventosextremos-inema</td><td data-label="Video">Previsêo do Dia: calorêo agora e tempestade severa com granizo no Sul</td><td class="n" data-label="Visualizaciones">6574</td><td class="n" data-label="Antigüedad">20 h</td><td class="n" data-label="× habitual">5.72×</td></tr>
+      <tr><td data-label="Canal">ARCKHÉ FTD</td><td data-label="Video">Renda Acabando e Nenhuma Resposta? O Erro Que Você Repete Todo Dia</td><td class="n" data-label="Visualizaciones">501</td><td class="n" data-label="Antigüedad">21 h</td><td class="n" data-label="× habitual">25.72×</td></tr>
+      <tr><td data-label="Canal">ARCKHÉ Tec</td><td data-label="Video">A IA que nêo esquece mais nada: Claude Mem leva 1.723 estrelas e lider…</td><td class="n" data-label="Visualizaciones">196</td><td class="n" data-label="Antigüedad">20 h</td><td class="n" data-label="× habitual">19.23×</td></tr>
+      <tr><td data-label="Canal">eventosextremos-ARCKHÉ</td><td data-label="Video">Previsêo do Dia: calorêo agora e tempestade severa com granizo no Sul</td><td class="n" data-label="Visualizaciones">6574</td><td class="n" data-label="Antigüedad">20 h</td><td class="n" data-label="× habitual">5.72×</td></tr>
     </tbody>
   </table></div>
   <p class="mut" style="font-size:.88rem;margin-top:10px">Fíjate en el último video: 6574 visualizaciones, pero solo 5,72× porque ese canal suele tener muchas más. Y 196 visualizaciones ya dieron 19× en un canal que suele tener pocas.</p>
@@ -307,8 +307,8 @@
   <div class="wrap">
     <div class="pill">Python 3</div><div class="pill">Feed RSS público de YouTube</div><div class="pill">Claude Code</div><div class="pill">systemd (opcional)</div>
     <p style="margin-top:18px">muse-canais · código MIT ·
-      <a href="https://github.com/inematds/muse-canais">inematds/muse-canais</a> ·
-      <a href="https://inema.club">INEMA.CLUB</a></p>
+      <a href="https://github.com/linnoff88-dev/muse-canais">linnoff88-dev/muse-canais</a> ·
+      <a href="https://ARCKHÉ AI">ARCKHÉ AI</a></p>
   </div>
 </footer>
 

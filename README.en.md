@@ -1,10 +1,10 @@
 # muse-canais
 
-[![muse-canais](guia/assets/banner-en.jpg)](https://inematds.github.io/muse-canais/guia/en/)
+[![muse-canais](guia/assets/banner-en.jpg)](https://linnoff88-dev.github.io/arckhe-/guia/en/)
 
 **🇧🇷 [Português](README.md) · 🇺🇸 English · 🇪🇸 [Español](README.es.md)**
 
-📖 **User guide (landing + step by step):** **https://inematds.github.io/muse-canais/guia/en/**
+📖 **User guide (landing + step by step):** **https://linnoff88-dev.github.io/arckhe-/guia/en/**
 
 ## What it is
 
@@ -13,7 +13,7 @@ muse-canais looks at your YouTube channels and shows which recent videos are per
 ## Use
 
 ```bash
-git clone https://github.com/inematds/muse-canais ~/projetos/muse-canais
+git clone https://github.com/linnoff88-dev/muse-canais ~/projetos/muse-canais
 cd ~/projetos/muse-canais
 python3 muse.py --atualiza-canais --dry   # discovers the channels and only displays them
 python3 muse.py --ideias                  # saves a report + 8 ideas
@@ -30,7 +30,7 @@ Report: `~/projetos/output/muse-canais/<data>/muse.md` (and `muse.json`).
 | `--atualiza-canais` | rereads the channel list from yt-pubx (name and address only) and discovers each channel’s public ID |
 | `--dry` | only prints |
 
-**Channels:** `canais.json` (key, name, address, public ID). At INEMA it is created from yt-pubx; elsewhere, write it by hand:
+**Channels:** `canais.json` (key, name, address, public ID). At ARCKHÉ it is created from yt-pubx; elsewhere, write it by hand:
 `{"meucanal": {"nome": "Meu canal", "url": "https://www.youtube.com/@meucanal", "id": "UC…"}}` (get the ID with `python3 -c "import muse; print(muse.resolver_id('https://www.youtube.com/@meucanal'))"`, run in the project folder; `--atualiza-canais` only works if you use yt-pubx).
 
 ## How the calculation works

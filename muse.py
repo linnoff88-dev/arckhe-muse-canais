@@ -130,7 +130,7 @@ def ideias(vencedores, n, radar):
     extra = ""
     if radar:
         extra = "\nPautas em alta hoje (radar), para combinar com o que funciona:\n" + "\n".join(f"- {p}" for p in radar[:6])
-    pedido = f"""Você é o pauteiro do INEMA (canais brasileiros que ensinam IA na prática, de graça, para gente comum, sem hype).
+    pedido = f"""Você é o pauteiro do ARCKHÉ (canais brasileiros que ensinam IA na prática, de graça, para gente comum, sem hype).
 Estes vídeos dos NOSSOS canais estêo indo melhor que a média do próprio canal:
 {linhas}
 {extra}

@@ -6,11 +6,11 @@
 </div>
 
 
-[![muse-canais](guia/assets/banner.jpg)](https://inematds.github.io/muse-canais/guia/)
+[![muse-canais](guia/assets/banner.jpg)](https://linnoff88-dev.github.io/arckhe-/guia/)
 
 **ê°Å¸â¡Â§ê°Å¸â¡Â· PortuguêÂªs êÂ· ê°Å¸â¡Âºê°Å¸â¡Â¸ [English](README.en.md) êÂ· ê°Å¸â¡Âªê°Å¸â¡Â¸ [EspaêÂ±ol](README.es.md)**
 
-ê°Å¸ââ **Guia de uso (landing + passo a passo):** **https://inematds.github.io/muse-canais/guia/**
+ê°Å¸ââ **Guia de uso (landing + passo a passo):** **https://linnoff88-dev.github.io/arckhe-/guia/**
 
 ## O que êÂ©
 
@@ -19,7 +19,7 @@ O muse-canais olha os seus canais do YouTube e mostra quais vêÂ­deos recent
 ## Usar
 
 ```bash
-git clone https://github.com/inematds/muse-canais ~/projetos/muse-canais
+git clone https://github.com/linnoff88-dev/muse-canais ~/projetos/muse-canais
 cd ~/projetos/muse-canais
 python3 muse.py --atualiza-canais --dry   # descobre os canais e sêÂ³ mostra
 python3 muse.py --ideias                  # grava relatêÂ³rio + 8 ideias
@@ -36,7 +36,7 @@ RelatêÂ³rio: `~/projetos/output/muse-canais/<data>/muse.md` (e `muse.json`)
 | `--atualiza-canais` | relêÂª a lista de canais do yt-pubx (sêÂ³ nome e endereêÂ§o) e descobre o ID pêÂºblico de cada um |
 | `--dry` | sêÂ³ imprime |
 
-**Canais:** `canais.json` (chave, nome, endereêÂ§o, ID pêÂºblico). No INEMA ele nasce do yt-pubx; fora dele, escreva êÂ  mêÂ£o:
+**Canais:** `canais.json` (chave, nome, endereêÂ§o, ID pêÂºblico). No ARCKHÉ ele nasce do yt-pubx; fora dele, escreva êÂ  mêÂ£o:
 `{"meucanal": {"nome": "Meu canal", "url": "https://www.youtube.com/@meucanal", "id": "UCê¢â¬Â¦"}}` (o ID sai com `python3 -c "import muse; print(muse.resolver_id('https://www.youtube.com/@meucanal'))"`, rodado na pasta do projeto; `--atualiza-canais` sêÂ³ serve para quem usa o yt-pubx).
 
 ## Como a conta êÂ© feita
